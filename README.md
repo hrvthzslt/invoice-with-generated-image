@@ -1,0 +1,1 @@
+# invoice-with-generated-image
