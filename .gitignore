@@ -3,3 +3,4 @@ venv
 output.pdf
 .env
 lib/__pycache__
+*.pdf

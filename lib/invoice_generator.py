@@ -17,6 +17,8 @@ class InvoiceGenerator:
         # use layout
         layout = SingleColumnLayout(page)
 
+        layout.add(Paragraph("Invoice:", font_size=Decimal(24), font="Helvetica"))
+
         # add image
         layout.add(
             Image(
@@ -26,9 +28,9 @@ class InvoiceGenerator:
             ))
 
         # add paragraphs
-        layout.add(Paragraph("Purchased products:"))
+        layout.add(Paragraph("Purchased produts:", font_size=Decimal(24), font="Helvetica"))
         for product in products:
-            layout.add(Paragraph(product))
+            layout.add(Paragraph(product, font_size=Decimal(14), font="Helvetica"))
 
         # store
         with open(Path("output.pdf"), "wb") as pdf_file_handle:
